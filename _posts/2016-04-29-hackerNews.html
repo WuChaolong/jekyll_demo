@@ -1,0 +1,103 @@
+<html>
+<head>
+<base href="https://news.ycombinator.com/">
+<script>
+function openAll(){
+    http_request = false;
+    makeRequest("http://charon-node.herokuapp.com/api?api=https://news.ycombinator.com/");
+}
+function makeRequest(url) {
+
+    http_request = false;
+
+    if (window.XMLHttpRequest) { // Mozilla, Safari,...
+        http_request = new XMLHttpRequest();
+        if (http_request.overrideMimeType) {
+            http_request.overrideMimeType('text/xml');
+        }
+    } else if (window.ActiveXObject) { // IE
+        try {
+            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+            try {
+                http_request = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {}
+        }
+    }
+
+    if (!http_request) {
+        alert('Giving up :( Cannot create an XMLHTTP instance');
+        return false;
+    }
+    http_request.onreadystatechange = function () {
+
+        if (http_request.readyState == 4) {
+            if (http_request.status == 200) {
+                openNewTap(http_request.responseText);
+                 
+            } else {
+                alert('There was a problem with the request.');
+            }
+        }
+
+    };
+    http_request.open('GET', url, true);
+    http_request.send(null);
+
+}
+
+function openNewTap(string){
+  
+//    var dom = HTMLParser(string);
+  var bodySting =string.slice(string.indexOf("<body>")+6,string.indexOf("</body>"));
+  console.log(bodySting);
+  var c = document.getElementById("c");
+  c.innerHTML = bodySting;
+  var elements = c.querySelectorAll(".title> a:first-of-type");
+  for (i = 0; i < 10; ++i) {
+    window.open(elements[i].href,'_newtab'+i);
+  }  
+}
+</script>
+<style type="text/css">
+/* 基本样式 */  
+        .tip {  
+            background: #eee;  
+            border: 1px solid #ccc;  
+            margin-left: 30px;  
+            padding: 0 1em; 
+            border-radius: 8px;  
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);  
+            position: fixed;
+            right: 1em;
+            top: 18px; 
+        }  
+  
+        .tip:before {
+            position: absolute;
+            display: inline-block;
+            right: 2em;
+            top: -18px;
+            content: '';
+            border-left: 17px solid transparent;
+            border-right: 17px solid transparent;
+            border-bottom: 17px solid rgba(0, 0, 0, 0.2);
+        }
+        .tip:after {
+            position: absolute;
+            display: inline-block;
+            right: 2em;
+            top: -16px;
+            content: '';
+            border-left: 17px solid transparent;
+            border-right: 17px solid transparent;
+            border-bottom: 17px solid #eee;
+        }
+</style>
+</head>
+<body style="margin:0 8px;" onload="openAll();">
+<!-- <button onclick="openAll();"  style="padding:.5em">open</button> -->
+<div id="c"></div>
+<div class="tip"><h5>Open new tap</h5><p>Are you allow?</div>
+<body>
+<html>
