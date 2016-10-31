@@ -1,0 +1,1354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>New Hire Information</title>
+<meta name="generator" content="WYSIWYG Web Builder 10 - http://www.wysiwygwebbuilder.com"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="field-names" content="GivenName,MiddleName,FamilyName,PreferredGivenName,DateOfBirth,SSN,DeliveryAddress1,Municipality,Region1,PostalCode,MaritalStatus,Gender,Race,Req,Title,Dept,StartDate,HiringManager,EmployeeID,EmergencyContactName,EmergencyContactRelationship,EmergencyContactHomePhone,EmergencyContactWorkPhone,EmployerAddress,EmployerNameAndAddress,Employer,EIN_P2,CityStateZIP,EIN_P1,FirstMiddleLast,OfficeCode,LastFirstMI,MiddleInitial,FirstMI,FirstMILast" />
+<meta name="editable-by-roles" content="Resp,Reviewer"/>
+</head>
+<body>
+	<form name="Form1" method="post" action="mailto:yourname@yourdomain.com" enctype="text/plain" data-ajax="true" data-transition="pop" id="Form1" style="display:inline;">
+   		<div data-role="content" data-theme="a" data-title="New Hire Information" id="GTS_f_NewHireInformation_v08">
+      	<div class="ui-content" role="main">
+         <div id="wb_Form1" >
+
+               <div id="wb_Text2" style="display:block;width:100%;">
+                  <span style="color:#000000;font-family:Arial;font-size:19px;">Personal Information</span>
+               </div>
+               <div id="ResPersonalInfo" class="ResPersonalInfo-grid-a ResPersonalInfo-responsive">
+                  <div class="ResPersonalInfo-block-a">
+                     <label for="GivenName"><font color="red">*</font> First Name</label>
+                     <input type="text" id="GivenName" onblur="NameProcessing();return false;" class="RequiredField" name="GivenName" maxlength="200" tabindex="1" title="First Name"/>
+                  </div>
+                  <div class="ResPersonalInfo-block-b">
+                     <label for="MiddleName">Middle Name</label>
+                     <input type="text" id="MiddleName" onblur="NameProcessing();return false;" name="MiddleName" tabindex="2" title="Middle Name"/>
+                  </div>
+                  <div class="ResPersonalInfo-block-a">
+                     <label for="FamilyName"><font color="red">*</font> Last Name</label>
+                     <input type="text" id="FamilyName" onblur="NameProcessing();return false;" class="RequiredField" name="FamilyName" tabindex="3" title="Last Name"/>
+                  </div>
+                  <div class="ResPersonalInfo-block-b">
+                     <label for="PreferredGivenName">Preferred Name</label>
+                     <input type="text" id="PreferredGivenName" class="Non-required_Field" name="PreferredGivenName" tabindex="4" title="Preferred Name"/>
+                  </div>
+                  <div class="ResPersonalInfo-block-a">
+                     <label for="DateOfBirth"><font color="red">*</font> Date of Birth</label>
+                     <input type="date" id="DateOfBirth" class="RequiredField" name="DateOfBirth" tabindex="5" title="Date of Birth mm/dd/yyyy" placeholder="mm/dd/yyyy"/>
+                  </div>
+                  <div class="ResPersonalInfo-block-b">
+                     <label for="SSN"><font color="red">*</font> SSN</label>
+                     <input type="text" id="SSN" class="RequiredField" name="SSN" maxlength="9" tabindex="6" title="SSN"/>
+                  </div>
+               </div>
+               <div id="wb_Text3" style="display:block;width:100%;">
+                  <span style="color:#000000;font-family:Arial;font-size:19px;">Contact Information</span>
+               </div>
+               <div id="ResAddressGrid" class="ResAddressGrid-grid-a ResAddressGrid-responsive">
+                  <div class="ResAddressGrid-block-a">
+                     <label for="DeliveryAddress1"><font color="red">*</font> Address Line 1</label>
+                     <input type="text" id="DeliveryAddress1" class="RequiredField" name="DeliveryAddress1" tabindex="7" title="Address line 1"/>
+                  </div>
+                  <div class="ResAddressGrid-block-b">
+                     <label for="Municipality"><font color="red">*</font> City</label>
+                     <input type="text" id="Municipality" onblur="CityStateZIPProcessing();return false;" class="RequiredField" name="Municipality" tabindex="8" title="City"/>
+                  </div>
+                  <div class="ResAddressGrid-block-a">
+                     <label for="Region1"><font color="red">*</font> State</label>
+                     <select name="Region1" size="1" id="Region1" onblur="CityStateZIPProcessing();return false;" tabindex="9" title="State">
+                        <option value="U">[Select]</option>
+                        <option value="AK">AK</option>
+                        <option value="AL">AL</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                     </select>
+                  </div>
+                  <div class="ResAddressGrid-block-b">
+                     <label for="PostalCode"><font color="red">*</font> ZIP/Postal Code</label>
+                     <input type="text" id="PostalCode" onblur="CityStateZIPProcessing();return false;" class="RequiredField" name="PostalCode"  tabindex="10" title="ZIP/Postal Code"/>
+                  </div>
+               </div>
+               <div id="wb_Text4" style="display:block;width:100%;">
+                  <span style="color:#000000;font-family:Arial;font-size:19px;">Demographic Information</span>
+               </div>
+               <div id="ResDemographics" class="ResDemographics-grid-a ResDemographics-responsive">
+                  <div class="ResDemographics-block-a">
+                     <label for="MaritalStatus"><font color="red">*</font> Marital Status</label>
+                     <select name="MaritalStatus" size="1" id="MaritalStatus" tabindex="11" title="Marital Status">
+                        <option value="U">[Select]</option>
+                        <option value="M">Married</option>
+                        <option value="S1">Single</option>
+                        <option value="S2">Separated</option>
+                        <option value="D">Divorced</option>
+                        <option value="W">Widowed</option>
+                     </select>
+                  </div>
+                  <div class="ResDemographics-block-b">
+                     <label for="Gender"><font color="red">*</font> Gender</label>
+                     <select name="Gender" size="1" id="Gender" tabindex="12" title="Gender">
+                        <option value="U">[Select]</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                     </select>
+                  </div>
+                  <div class="ResDemographics-block-a">
+                     <label for="Race"><font color="red">*</font> Race</label>
+                     <select name="Race" size="1" id="Race" tabindex="13" title="Race">
+                        <option value="U">[Select]</option>
+                        <option value="H">Hispanic or Latino</option>
+                        <option value="W">White (not Hispanic or Latino)</option>
+                        <option value="B">Black or African American (not Hispanic or Latino)</option>
+                        <option value="PI">Native Hawaiian or other Pacific Islander (not Hispanic or Latino)</option>
+                        <option value="A">Asian (not Hispanic or Latino)</option>
+                        <option value="AI">American Indian or Alaska Native</option>
+                        <option value="T">Two or More Races (not Hispanic or Latino)</option>
+                     </select>
+                  </div>
+                  <div class="ResDemographics-block-b">
+                  </div>
+               </div>
+               <div id="wb_Text1" style="display:block;width:100%;">
+                  <span style="color:#000000;font-family:Arial;font-size:19px;">Position Information</span>
+               </div>
+               <div id="RevPositionData" class="RevPositionData-grid-a RevPositionData-responsive">
+                  <div class="RevPositionData-block-a">
+                     <label for="Req">Req Number</label>
+                     <input type="text" id="Req" class="Non-required_Field" name="Req" tabindex="14" autocomplete="off" title="Req Number"/>
+                  </div>
+                  <div class="RevPositionData-block-b">
+                     <label for="Title">Job Title</label>
+                     <input type="text" id="Title" class="Non-required_Field" name="Title" tabindex="15" autocomplete="off" title="Job Title"/>
+                  </div>
+                  <div class="RevPositionData-block-a">
+                     <label for="Dept">Department</label>
+                     <input type="text" id="Dept" class="Non-required_Field" name="Dept"  tabindex="16" autocomplete="off" title="Department"/>
+                  </div>
+                  <div class="RevPositionData-block-b">
+                     <label for="StartDate">Start Date</label>
+                     <input type="date" id="StartDate" class="Non-required_Field" name="StartDate"  tabindex="17" autocomplete="off" title="Start Date"/>
+                  </div>
+                  <div class="RevPositionData-block-a">
+                     <label for="HiringManager">Manager</label>
+                     <input type="text" id="HiringManager" class="Non-required_Field" name="HiringManager"  tabindex="18" autocomplete="off" title="Manager"/>
+                  </div>
+                  <div class="RevPositionData-block-b">
+                     <label for="EmployeeID">Employee ID</label>
+                     <input type="text" data-theme="a" id="EmployeeID" class="Non-required_Field" name="EmployeeID"  tabindex="19" autocomplete="off" title="Employee ID"/>
+                  </div>
+               </div>
+               <div id="wb_lblEmergeInfo" style="display:block;width:100%;">
+                  <span style="color:#000000;font-family:Arial;font-size:19px;">In case of emergency, please notify: (Please list spouse, if married)</span>
+               </div>
+               <div id="ResEmergencyContactInfo" class="ResEmergencyContactInfo-grid-a ResEmergencyContactInfo-responsive">
+                  <div class="ResEmergencyContactInfo-block-a">
+                     <label for="EmergencyContactName"><font color="red">*</font> Name</label>
+                     <input type="text" id="EmergencyContactName" class="Non-required_Field" name="EmergencyContactName"  tabindex="20" autocomplete="off" title="Emergency Contact Name"/>
+                  </div>
+                  <div class="ResEmergencyContactInfo-block-b">
+                     <label for="EmergencyContactRelationship"><font color="red">*</font> Relationship</label>
+                     <input type="text" id="EmergencyContactRelationship" class="Non-required_Field" name="EmergencyContactRelationship"  tabindex="21" autocomplete="off" title="Emergency Contact Relationship"/>
+                  </div>
+                  <div class="ResEmergencyContactInfo-block-a">
+                     <label for="EmergencyContactHomePhone"><font color="red">*</font> Phone</label>
+                     <input type="text" id="EmergencyContactHomePhone" class="Non-required_Field" name="EmergencyContactHomePhone"  tabindex="22" autocomplete="off" title="Emergency Contact Home Phone"/>
+                  </div>
+                  <div class="ResEmergencyContactInfo-block-b">
+                     <label for="EmergencyContactWorkPhone">Alternate Phone</label>
+                     <input type="text" id="EmergencyContactWorkPhone" class="Non-required_Field" name="EmergencyContactWorkPhone"  tabindex="23" autocomplete="off" title="Emergency Contact Alt Phone"/>
+                  </div>
+               </div>
+               <div id="SubmitButtonHolder" class="SubmitButtonHolder-grid-a SubmitButtonHolder-responsive">
+                  <div class="SubmitButtonHolder-block-a">
+                     <input type="submit" id="btnSubmit" click_action="submit" onclick="if(validateForm()){form.submit()};return false;" name="btnSubmit" value="Submit" tabindex="24" title="Submit your form"/>
+                  </div>
+                  <div class="SubmitButtonHolder-block-b">
+                     <input type="submit" id="btnSaveForLater" click_action="saveforlater" onclick="UnrequireAllChildElements('Form1');form.submit();return false;" name="btnSaveForLater" value="Save for Later" tabindex="25" title="Save your form for later"/>
+                  </div>
+               </div>
+               <div id="wb_Text5" style="display:block;width:100%;">
+
+               </div>
+               <div id="HiddenFields" class="HiddenFields-grid-solo HiddenFields-responsive">
+                  <div class="HiddenFields-block-a">
+
+                     <input type="hidden" id="UserRoleForActivity" class="Non-required_Field" name="UserRoleForActivity" value="Resp" tabindex="39" title="UserRoleForActivity"/>
+
+                     <input type="hidden" id="ActivityStatus" class="Non-required_Field" name="ActivityStatus" value="Pending" tabindex="40" title="ActivityStatus"/>
+
+                     <input type="hidden" id="formID" class="Non-required_Field" name="formID" tabindex="38" title="formID"/>
+
+                     <input type="hidden" id="EmployerAddress" class="Non-required_Field" name="EmployerAddress" tabindex="27" title="EmployerAddress"/>
+
+                     <input type="hidden" id="EmployerNameAndAddress" class="Non-required_Field" name="EmployerNameAndAddress" tabindex="28" title="EmployerNameAndAddress"/>
+
+                     <input type="hidden" id="Employer" class="Non-required_Field" name="Employer"tabindex="26" title="Employer"/>
+
+                     <input type="hidden" id="EIN_P2" class="Non-required_Field" name="EIN_P2" tabindex="30" title="EIN_P2"/>
+
+                     <input type="hidden" id="CityStateZIP" class="Non-required_Field" name="CityStateZIP" tabindex="37" title="CityStateZIP"/>
+
+                     <input type="hidden" id="EIN_P1" class="Non-required_Field" name="EIN_P1" tabindex="29" title="EIN_P1"/>
+
+                     <input type="hidden" id="FirstMiddleLast" class="Non-required_Field" name="FirstMiddleLast" tabindex="32" title="FirstMiddleLast"/>
+
+                     <input type="hidden" id="OfficeCode" class="Non-required_Field" name="OfficeCode" tabindex="31" title="OfficeCode"/>
+
+                     <input type="hidden" id="LastFirstMI" class="Non-required_Field" name="LastFirstMI" tabindex="36" title="LastFirstMI"/>
+
+                     <input type="hidden" id="MiddleInitial" class="Non-required_Field" name="MiddleInitial" tabindex="33" title="MiddleInitial"/>
+
+                     <input type="hidden" id="FirstMI" class="Non-required_Field" name="FirstMI" tabindex="34" title="FirstMI"/>
+
+                     <input type="hidden" id="FirstMILast" class="Non-required_Field" name="FirstMILast" tabindex="35" title="FirstMILast"/>
+                  </div>
+               </div>
+
+         </div>
+      </div>
+
+   </div>
+
+   </form>
+<script>
+   (function() {
+      var elem = document.createElement('input');
+      elem.setAttribute('type', 'date');
+
+      if ( elem.type === 'text' ) {
+         $('#date').datepicker();
+      }
+   })();
+
+
+   $(document).ready(function () {
+      SetElementPropsBasedOnURFAAS()
+      SetSpecificDatesToDatepicker();
+   });
+	function SetSpecificDatesToDatepicker () {
+		//if the input is set to text, not type, then use the datepicker
+		var sDOBType = document.getElementById("DateOfBirth").type;
+     	if (sDOBType == 'text') {
+         $('#DateOfBirth').datepicker();
+     	}
+	}
+   function ssnOnBlur() {
+   //test of onblur event
+      //alert('alert here in fn ssnOnBlur');
+   }
+   function NameProcessing() {
+      var sGivenName = '';
+      sGivenName = document.getElementById("GivenName").value;
+      var sMiddleName = '';
+      sMiddleName = document.getElementById("MiddleName").value;
+      var sFamilyName = '';
+      sFamilyName = document.getElementById("FamilyName").value;
+
+      var sMiddleInitial = '';
+      if (sMiddleName.length > 0) {
+         sMiddleInitial = sMiddleName.substring(0, 1) + '.';
+      }
+
+      //FirstMiddleLast
+        document.getElementById("FirstMiddleLast").value = sGivenName + ' ' + sMiddleName + ' ' + sFamilyName;
+      //MiddleInitial
+        document.getElementById("MiddleInitial").value = sMiddleInitial;
+      //FirstMI
+        document.getElementById("FirstMI").value = sGivenName + ' ' + sMiddleInitial;
+      //FirstMILast
+        document.getElementById("FirstMILast").value = sGivenName + ' ' + sMiddleInitial + ' ' + sFamilyName;
+      //LastFirstMI
+        document.getElementById("LastFirstMI").value = sFamilyName + ', ' + sGivenName + ' ' + sMiddleInitial;
+   }
+
+   function CityStateZIPProcessing() {
+      var sCity = '';
+      sCity = document.getElementById("Municipality").value;
+      var sState = '';
+      sState = document.getElementById("Region1").value;
+      var sZIP = '';
+      sZIP = document.getElementById("PostalCode").value;
+
+      //CityStateZIP
+        document.getElementById("CityStateZIP").value = sCity + ', ' + sState + ' ' + sZIP;
+   }
+
+
+   function UnrequireAllChildElements(str1) {
+      //alert('ready to start here in UnrequireAllChildElements')
+      var strDivToUnrequire = "#" + str1;
+      //alert(strDivToUnrequire);
+      $(strDivToUnrequire).find("input,select,textarea,button").removeAttr('required');
+      //alert('all done here in UnrequireAllChildElements')
+   }
+
+   function ChangeBGColorAllChildElements(str1) {
+      //alert('ready to start here in ChangeBGColorAllChildElements')
+      var strDivToChange = "#" + str1;
+      //alert(strDivToChange);
+      $(strDivToChange).find("input,select,textarea,button").css({"background-color" : "#F5F5F5"});
+      //alert('all done here in ChangeBGColorAllChildElements')
+   }
+
+   function SetElementPropsBasedOnURFAAS(){
+       $("#HiddenFields").find("input,select,textarea,button,text").hide()
+       $("#HiddenFields").find("input,select,textarea,button,text").text('');
+   	//alert('UserRoleForActivity/ActivityStatus='+document.all['UserRoleForActivity'].value + '/' +document.all['ActivityStatus'].value);
+   	var sUserRoleForActivity = '';
+   	sUserRoleForActivity = document.getElementById("UserRoleForActivity").value;
+   	var sActivityStatus = '';
+   	sActivityStatus = document.getElementById("ActivityStatus").value;
+         switch (sUserRoleForActivity) {
+          case "Resp":
+            //alert('Do stuff for case sUserRoleForActivity='+sUserRoleForActivity);
+            switch (sActivityStatus) {
+            case "Pending":
+               //Unlock resp elements, lock reviewer elements
+               //alert('Resp/Pending');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               break;
+            case "Incomplete":
+               //Unlock resp elements, lock reviewer elements
+               //alert('Resp/Pending');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               break;
+            case "Resubmit":
+               //Unlock resp elements, lock reviewer elements
+               //alert('Resp/Pending');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               break;
+            case "Submitted":
+               //lock resp elements, lock reviewer elements
+               //alert('Resp/Submitted');
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+               break;
+            default:
+               //lock resp elements, lock reviewer elements
+               //alert('default');
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+               break;
+            }
+            break;
+          case "Reviewer":
+            //alert('Do stuff for case sUserRoleForActivity='+sUserRoleForActivity);
+            switch (sActivityStatus) {
+            case "Pending":
+               //lock rev elements, lock resp elements
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+               break;
+            case "Incomplete":
+               //lock rev elements, lock resp elements
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+               break;
+            case "Resubmit":
+               //lock rev elements, lock resp elements
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+               break;
+            case "Submitted":
+               //unlock rev elements, lock resp elements, unrequire resp elements
+               //alert('Reviewer/Submitted');
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               break;
+            default:
+              //lock resp elements, lock reviewer elements
+              //alert('Reviewer/[none]');
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+                document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+               break;
+            }
+            break;
+          default:
+              //alert('[No userrole]');
+               $("#ResPersonalInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResPersonalInfo');
+               $("#ResAddressGrid").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResAddressGrid');
+               $("#ResDemographics").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResDemographics');
+               $("#ResEmergencyContactInfo").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('ResEmergencyContactInfo');
+               $("#RevPositionData").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('RevPositionData');
+               $("#HiddenFields").find("input,select,textarea,button").prop("readonly",true);
+               ChangeBGColorAllChildElements('HiddenFields');
+               document.getElementById("Region1").disabled=true;
+               document.getElementById("Race").disabled=true;
+               document.getElementById("MaritalStatus").disabled=true;
+               document.getElementById("Gender").disabled=true;
+               document.getElementById("btnSubmit").disabled=true;
+               document.getElementById("btnSaveForLater").disabled=true;
+         }
+
+   }
+
+      function validateForm() {
+		//form validations go here
+		//only do validations for resp, ignore for other cases and submit
+		//alert('here in validateForm');
+		var sUserRoleForActivityForValidate = '';
+		sUserRoleForActivityForValidate = document.getElementById("UserRoleForActivity").value;
+		var sActivityStatusForValidate = '';
+		sActivityStatusForValidate = document.getElementById("ActivityStatus").value;
+
+		if((sUserRoleForActivityForValidate=="Resp")&&(sActivityStatusForValidate=="Pending" || sActivityStatusForValidate=="Incomplete")){
+							var retVal0 = false;
+							var retVal1 = false;
+							var retVal2 = false;
+							var retVal2 = false;
+							retVal0 = ValidatePersonalInfo()
+							if(retVal0==true) {
+								retVal1 = ValidateLayoutGrid1()
+								if(retVal1==true) {
+										retVal2 = ValidateAddressGrid()
+											if (retVal2==true) {
+												retVal3 = ValidateEmergencyContactInfo()
+											}
+								}
+								if ((retVal0==true)&&(retVal1==true)&&(retVal2==true)&&(retVal3==true)) {
+									//alert("returning true");
+									return true;
+								}
+							} else {
+								//alert("returning false");
+								return false;
+							}
+		} else {
+			//alert("returning true");
+			return true;
+		}
+   }
+
+
+      function ValidateLayoutGrid1()
+
+      {
+      var retVal = true;
+         var regexp;
+         if (document.getElementById("Race").selectedIndex < 0)
+         {
+            alert("Please select race/ethnicity");
+            document.getElementById("Race").focus();
+            retVal=false;
+            return retVal;
+         }
+         if (document.getElementById("Race").selectedIndex == 0)
+         {
+            alert("Please select race/ethnicity");
+            document.getElementById("Race").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("Gender").selectedIndex < 0)
+         {
+            alert("Please select gender");
+            document.getElementById("Gender").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("Gender").selectedIndex == 0)
+         {
+            alert("Please select gender");
+            document.getElementById("Gender").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("MaritalStatus").selectedIndex < 0)
+         {
+            alert("Please select marital status");
+            document.getElementById("MaritalStatus").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("MaritalStatus").selectedIndex == 0)
+         {
+            alert("Please select marital status");
+            document.getElementById("MaritalStatus").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         return retVal;
+      }
+
+
+      function ValidatePersonalInfo() {
+
+      //alert("ValidatePersonalInfo");
+      var retVal = true;
+         if (document.getElementById("GivenName").value == '')
+         {
+            alert("Please enter first name");
+            document.getElementById("GivenName").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("GivenName").value.length < 1)
+         {
+            alert("Please enter first name");
+            document.getElementById("GivenName").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("FamilyName").value == '')
+         {
+            alert("Please enter last name");
+            document.getElementById("FamilyName").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("FamilyName").value.length < 1)
+         {
+            alert("Please enter last name");
+            document.getElementById("FamilyName").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         regexp = /(0[1-9]|[12][0-9]|3[01])[- \/.](0[1-9]|1[012])[- \/.](19|20)[0-9]{2}/;
+         if (!regexp.test(document.getElementById("DateOfBirth").value))
+         {
+            alert("Please enter date of birth");
+            document.getElementById("DateOfBirth").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("DateOfBirth").value == '')
+         {
+            alert("Please enter date of birth");
+            document.getElementById("DateOfBirth").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("DateOfBirth").value.length < 1)
+         {
+            alert("Please enter date of birth");
+            document.getElementById("DateOfBirth").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         regexp = /^\d{9}$/;
+         if (!regexp.test(document.getElementById("SSN").value))
+         {
+            alert("Please enter SSN in correct format #########");
+            document.getElementById("SSN").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("SSN").value == '')
+         {
+            alert("Please enter SSN in correct format #########");
+            document.getElementById("SSN").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("SSN").value.length < 9)
+         {
+            alert("Please enter SSN in correct format #########");
+            document.getElementById("SSN").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("SSN").value.length > 9)
+         {
+            alert("Please enter SSN in correct format #########");
+            document.getElementById("SSN").focus();
+            retVal=false;
+            return retVal;
+
+         }
+
+         return retVal;
+
+      }
+
+      function ValidateAddressGrid()
+      {
+      var retVal = true;
+         var regexp;
+         if (document.getElementById("DeliveryAddress1").value == '')
+         {
+            alert("Please enter address line 1");
+            document.getElementById("DeliveryAddress1").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("DeliveryAddress1").value.length < 1)
+         {
+            alert("Please enter address line 1");
+            document.getElementById("DeliveryAddress1").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("Region1").selectedIndex < 0)
+         {
+            alert("Please select state");
+            document.getElementById("Region1").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("Region1").selectedIndex == 0)
+         {
+            alert("Please select state");
+            document.getElementById("Region1").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("PostalCode").value == '')
+         {
+            alert("Please enter ZIP/Postal code");
+            document.getElementById("PostalCode").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("PostalCode").value.length < 1)
+         {
+            alert("Please enter ZIP/Postal code");
+            document.getElementById("PostalCode").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("Municipality").value == '')
+         {
+            alert("Please enter city");
+            document.getElementById("Municipality").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("Municipality").value.length < 1)
+         {
+            alert("Please enter city");
+            document.getElementById("Municipality").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         return retVal;
+      }
+
+
+      function ValidateEmergencyContactInfo()
+      {
+      var retVal = true;
+         var regexp;
+         if (document.getElementById("EmergencyContactName").value == '')
+         {
+            alert("Please enter emergency contact first name");
+            document.getElementById("EmergencyContactName").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("EmergencyContactName").value.length < 1)
+         {
+            alert("Please enter emergency contact first name");
+            document.getElementById("EmergencyContactName").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("EmergencyContactRelationship").value == '')
+         {
+            alert("Please enter emergency contact relationship");
+            document.getElementById("EmergencyContactRelationship").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("EmergencyContactRelationship").value.length < 1)
+         {
+            alert("Please enter emergency contact relationship");
+            document.getElementById("EmergencyContactRelationship").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("EmergencyContactHomePhone").value == '')
+         {
+            alert("Please enter emergency contact phone");
+            document.getElementById("EmergencyContactHomePhone").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         if (document.getElementById("EmergencyContactHomePhone").value.length < 1)
+         {
+            alert("Please enter emergency contact phone");
+            document.getElementById("EmergencyContactHomePhone").focus();
+            retVal=false;
+            return retVal;
+
+         }
+         return retVal;
+      }
+   </script>
+
+
+   <style type="text/css">
+   #GTS_f_NewHireInformation_v08
+   {
+      text-align: left;
+   }
+   body
+   {
+      background-color: #FFFFFF;
+   }
+   </style>
+
+   <style type="text/css">
+   .ResDemographics-grid-a, .ResDemographics-grid-b, .ResDemographics-grid-c, .ResDemographics-grid-d, .ResDemographics-grid-solo
+   {
+      overflow: hidden;
+   }
+   .ResDemographics-block-a, .ResDemographics-block-b, .ResDemographics-block-c, .ResDemographics-block-d, .ResDemographics-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .ResDemographics-block-a
+   {
+      clear: left;
+   }
+   ul.ResDemographics-grid-a, ul.ResDemographics-grid-b, ul.ResDemographics-grid-c, ul.ResDemographics-grid-d, ul.ResDemographics-grid-solo, li.ResDemographics-block-a, li.ResDemographics-block-b, li.ResDemographics-block-c, li.ResDemographics-block-d, li.ResDemographics-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .ResDemographics-grid-a > .ResDemographics-block-a, .ResDemographics-grid-a > .ResDemographics-block-b
+   {
+      width: 50%;
+   }
+   .ResDemographics-grid-b > .ResDemographics-block-a, .ResDemographics-grid-b > .ResDemographics-block-b, .ResDemographics-grid-b > .ResDemographics-block-c
+   {
+      width: 33.333%;
+   }
+   .ResDemographics-grid-c > .ResDemographics-block-a, .ResDemographics-grid-c > .ResDemographics-block-b, .ResDemographics-grid-c > .ResDemographics-block-c, .ResDemographics-grid-c > .ResDemographics-block-d
+   {
+      width: 25%;
+   }
+   .ResDemographics-grid-d > .ResDemographics-block-a, .ResDemographics-grid-d > .ResDemographics-block-b, .ResDemographics-grid-d > .ResDemographics-block-c, .ResDemographics-grid-d > .ResDemographics-block-d, .ResDemographics-grid-d > .ResDemographics-block-e
+   {
+      width: 20%;
+   }
+   .ResDemographics-grid-solo > .ResDemographics-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .ResDemographics-block-a
+   {
+      text-align: left;
+   }
+   .ResDemographics-block-b
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .ResDemographics-responsive > .ResDemographics-block-a,
+      .ResDemographics-responsive > .ResDemographics-block-b,
+      .ResDemographics-responsive > .ResDemographics-block-c,
+      .ResDemographics-responsive > .ResDemographics-block-d,
+      .ResDemographics-responsive > .ResDemographics-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   .ResPersonalInfo-grid-a, .ResPersonalInfo-grid-b, .ResPersonalInfo-grid-c, .ResPersonalInfo-grid-d, .ResPersonalInfo-grid-solo
+   {
+      overflow: hidden;
+   }
+   .ResPersonalInfo-block-a, .ResPersonalInfo-block-b, .ResPersonalInfo-block-c, .ResPersonalInfo-block-d, .ResPersonalInfo-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .ResPersonalInfo-block-a
+   {
+      clear: left;
+   }
+   ul.ResPersonalInfo-grid-a, ul.ResPersonalInfo-grid-b, ul.ResPersonalInfo-grid-c, ul.ResPersonalInfo-grid-d, ul.ResPersonalInfo-grid-solo, li.ResPersonalInfo-block-a, li.ResPersonalInfo-block-b, li.ResPersonalInfo-block-c, li.ResPersonalInfo-block-d, li.ResPersonalInfo-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .ResPersonalInfo-grid-a > .ResPersonalInfo-block-a, .ResPersonalInfo-grid-a > .ResPersonalInfo-block-b
+   {
+      width: 50%;
+   }
+   .ResPersonalInfo-grid-b > .ResPersonalInfo-block-a, .ResPersonalInfo-grid-b > .ResPersonalInfo-block-b, .ResPersonalInfo-grid-b > .ResPersonalInfo-block-c
+   {
+      width: 33.333%;
+   }
+   .ResPersonalInfo-grid-c > .ResPersonalInfo-block-a, .ResPersonalInfo-grid-c > .ResPersonalInfo-block-b, .ResPersonalInfo-grid-c > .ResPersonalInfo-block-c, .ResPersonalInfo-grid-c > .ResPersonalInfo-block-d
+   {
+      width: 25%;
+   }
+   .ResPersonalInfo-grid-d > .ResPersonalInfo-block-a, .ResPersonalInfo-grid-d > .ResPersonalInfo-block-b, .ResPersonalInfo-grid-d > .ResPersonalInfo-block-c, .ResPersonalInfo-grid-d > .ResPersonalInfo-block-d, .ResPersonalInfo-grid-d > .ResPersonalInfo-block-e
+   {
+      width: 20%;
+   }
+   .ResPersonalInfo-grid-solo > .ResPersonalInfo-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .ResPersonalInfo-block-a
+   {
+      text-align: left;
+   }
+   .ResPersonalInfo-block-b
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .ResPersonalInfo-responsive > .ResPersonalInfo-block-a,
+      .ResPersonalInfo-responsive > .ResPersonalInfo-block-b,
+      .ResPersonalInfo-responsive > .ResPersonalInfo-block-c,
+      .ResPersonalInfo-responsive > .ResPersonalInfo-block-d,
+      .ResPersonalInfo-responsive > .ResPersonalInfo-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   .ResAddressGrid-grid-a, .ResAddressGrid-grid-b, .ResAddressGrid-grid-c, .ResAddressGrid-grid-d, .ResAddressGrid-grid-solo
+   {
+      overflow: hidden;
+   }
+   .ResAddressGrid-block-a, .ResAddressGrid-block-b, .ResAddressGrid-block-c, .ResAddressGrid-block-d, .ResAddressGrid-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .ResAddressGrid-block-a
+   {
+      clear: left;
+   }
+   ul.ResAddressGrid-grid-a, ul.ResAddressGrid-grid-b, ul.ResAddressGrid-grid-c, ul.ResAddressGrid-grid-d, ul.ResAddressGrid-grid-solo, li.ResAddressGrid-block-a, li.ResAddressGrid-block-b, li.ResAddressGrid-block-c, li.ResAddressGrid-block-d, li.ResAddressGrid-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .ResAddressGrid-grid-a > .ResAddressGrid-block-a, .ResAddressGrid-grid-a > .ResAddressGrid-block-b
+   {
+      width: 50%;
+   }
+   .ResAddressGrid-grid-b > .ResAddressGrid-block-a, .ResAddressGrid-grid-b > .ResAddressGrid-block-b, .ResAddressGrid-grid-b > .ResAddressGrid-block-c
+   {
+      width: 33.333%;
+   }
+   .ResAddressGrid-grid-c > .ResAddressGrid-block-a, .ResAddressGrid-grid-c > .ResAddressGrid-block-b, .ResAddressGrid-grid-c > .ResAddressGrid-block-c, .ResAddressGrid-grid-c > .ResAddressGrid-block-d
+   {
+      width: 25%;
+   }
+   .ResAddressGrid-grid-d > .ResAddressGrid-block-a, .ResAddressGrid-grid-d > .ResAddressGrid-block-b, .ResAddressGrid-grid-d > .ResAddressGrid-block-c, .ResAddressGrid-grid-d > .ResAddressGrid-block-d, .ResAddressGrid-grid-d > .ResAddressGrid-block-e
+   {
+      width: 20%;
+   }
+   .ResAddressGrid-grid-solo > .ResAddressGrid-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .ResAddressGrid-block-a
+   {
+      text-align: left;
+   }
+   .ResAddressGrid-block-b
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .ResAddressGrid-responsive > .ResAddressGrid-block-a,
+      .ResAddressGrid-responsive > .ResAddressGrid-block-b,
+      .ResAddressGrid-responsive > .ResAddressGrid-block-c,
+      .ResAddressGrid-responsive > .ResAddressGrid-block-d,
+      .ResAddressGrid-responsive > .ResAddressGrid-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   .RevPositionData-grid-a, .RevPositionData-grid-b, .RevPositionData-grid-c, .RevPositionData-grid-d, .RevPositionData-grid-solo
+   {
+      overflow: hidden;
+   }
+   .RevPositionData-block-a, .RevPositionData-block-b, .RevPositionData-block-c, .RevPositionData-block-d, .RevPositionData-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .RevPositionData-block-a
+   {
+      clear: left;
+   }
+   ul.RevPositionData-grid-a, ul.RevPositionData-grid-b, ul.RevPositionData-grid-c, ul.RevPositionData-grid-d, ul.RevPositionData-grid-solo, li.RevPositionData-block-a, li.RevPositionData-block-b, li.RevPositionData-block-c, li.RevPositionData-block-d, li.RevPositionData-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .RevPositionData-grid-a > .RevPositionData-block-a, .RevPositionData-grid-a > .RevPositionData-block-b
+   {
+      width: 50%;
+   }
+   .RevPositionData-grid-b > .RevPositionData-block-a, .RevPositionData-grid-b > .RevPositionData-block-b, .RevPositionData-grid-b > .RevPositionData-block-c
+   {
+      width: 33.333%;
+   }
+   .RevPositionData-grid-c > .RevPositionData-block-a, .RevPositionData-grid-c > .RevPositionData-block-b, .RevPositionData-grid-c > .RevPositionData-block-c, .RevPositionData-grid-c > .RevPositionData-block-d
+   {
+      width: 25%;
+   }
+   .RevPositionData-grid-d > .RevPositionData-block-a, .RevPositionData-grid-d > .RevPositionData-block-b, .RevPositionData-grid-d > .RevPositionData-block-c, .RevPositionData-grid-d > .RevPositionData-block-d, .RevPositionData-grid-d > .RevPositionData-block-e
+   {
+      width: 20%;
+   }
+   .RevPositionData-grid-solo > .RevPositionData-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .RevPositionData-block-a
+   {
+      text-align: left;
+   }
+   .RevPositionData-block-b
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .RevPositionData-responsive > .RevPositionData-block-a,
+      .RevPositionData-responsive > .RevPositionData-block-b,
+      .RevPositionData-responsive > .RevPositionData-block-c,
+      .RevPositionData-responsive > .RevPositionData-block-d,
+      .RevPositionData-responsive > .RevPositionData-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   .ResEmergencyContactInfo-grid-a, .ResEmergencyContactInfo-grid-b, .ResEmergencyContactInfo-grid-c, .ResEmergencyContactInfo-grid-d, .ResEmergencyContactInfo-grid-solo
+   {
+      overflow: hidden;
+   }
+   .ResEmergencyContactInfo-block-a, .ResEmergencyContactInfo-block-b, .ResEmergencyContactInfo-block-c, .ResEmergencyContactInfo-block-d, .ResEmergencyContactInfo-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .ResEmergencyContactInfo-block-a
+   {
+      clear: left;
+   }
+   ul.ResEmergencyContactInfo-grid-a, ul.ResEmergencyContactInfo-grid-b, ul.ResEmergencyContactInfo-grid-c, ul.ResEmergencyContactInfo-grid-d, ul.ResEmergencyContactInfo-grid-solo, li.ResEmergencyContactInfo-block-a, li.ResEmergencyContactInfo-block-b, li.ResEmergencyContactInfo-block-c, li.ResEmergencyContactInfo-block-d, li.ResEmergencyContactInfo-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .ResEmergencyContactInfo-grid-a > .ResEmergencyContactInfo-block-a, .ResEmergencyContactInfo-grid-a > .ResEmergencyContactInfo-block-b
+   {
+      width: 50%;
+   }
+   .ResEmergencyContactInfo-grid-b > .ResEmergencyContactInfo-block-a, .ResEmergencyContactInfo-grid-b > .ResEmergencyContactInfo-block-b, .ResEmergencyContactInfo-grid-b > .ResEmergencyContactInfo-block-c
+   {
+      width: 33.333%;
+   }
+   .ResEmergencyContactInfo-grid-c > .ResEmergencyContactInfo-block-a, .ResEmergencyContactInfo-grid-c > .ResEmergencyContactInfo-block-b, .ResEmergencyContactInfo-grid-c > .ResEmergencyContactInfo-block-c, .ResEmergencyContactInfo-grid-c > .ResEmergencyContactInfo-block-d
+   {
+      width: 25%;
+   }
+   .ResEmergencyContactInfo-grid-d > .ResEmergencyContactInfo-block-a, .ResEmergencyContactInfo-grid-d > .ResEmergencyContactInfo-block-b, .ResEmergencyContactInfo-grid-d > .ResEmergencyContactInfo-block-c, .ResEmergencyContactInfo-grid-d > .ResEmergencyContactInfo-block-d, .ResEmergencyContactInfo-grid-d > .ResEmergencyContactInfo-block-e
+   {
+      width: 20%;
+   }
+   .ResEmergencyContactInfo-grid-solo > .ResEmergencyContactInfo-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .ResEmergencyContactInfo-block-a
+   {
+      text-align: left;
+   }
+   .ResEmergencyContactInfo-block-b
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .ResEmergencyContactInfo-responsive > .ResEmergencyContactInfo-block-a,
+      .ResEmergencyContactInfo-responsive > .ResEmergencyContactInfo-block-b,
+      .ResEmergencyContactInfo-responsive > .ResEmergencyContactInfo-block-c,
+      .ResEmergencyContactInfo-responsive > .ResEmergencyContactInfo-block-d,
+      .ResEmergencyContactInfo-responsive > .ResEmergencyContactInfo-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   .HiddenFields-grid-a, .HiddenFields-grid-b, .HiddenFields-grid-c, .HiddenFields-grid-d, .HiddenFields-grid-solo
+   {
+      overflow: hidden;
+   }
+   .HiddenFields-block-a, .HiddenFields-block-b, .HiddenFields-block-c, .HiddenFields-block-d, .HiddenFields-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .HiddenFields-block-a
+   {
+      clear: left;
+   }
+   ul.HiddenFields-grid-a, ul.HiddenFields-grid-b, ul.HiddenFields-grid-c, ul.HiddenFields-grid-d, ul.HiddenFields-grid-solo, li.HiddenFields-block-a, li.HiddenFields-block-b, li.HiddenFields-block-c, li.HiddenFields-block-d, li.HiddenFields-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .HiddenFields-grid-a > .HiddenFields-block-a, .HiddenFields-grid-a > .HiddenFields-block-b
+   {
+      width: 50%;
+   }
+   .HiddenFields-grid-b > .HiddenFields-block-a, .HiddenFields-grid-b > .HiddenFields-block-b, .HiddenFields-grid-b > .HiddenFields-block-c
+   {
+      width: 33.333%;
+   }
+   .HiddenFields-grid-c > .HiddenFields-block-a, .HiddenFields-grid-c > .HiddenFields-block-b, .HiddenFields-grid-c > .HiddenFields-block-c, .HiddenFields-grid-c > .HiddenFields-block-d
+   {
+      width: 25%;
+   }
+   .HiddenFields-grid-d > .HiddenFields-block-a, .HiddenFields-grid-d > .HiddenFields-block-b, .HiddenFields-grid-d > .HiddenFields-block-c, .HiddenFields-grid-d > .HiddenFields-block-d, .HiddenFields-grid-d > .HiddenFields-block-e
+   {
+      width: 20%;
+   }
+   .HiddenFields-grid-solo > .HiddenFields-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .HiddenFields-block-a
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .HiddenFields-responsive > .HiddenFields-block-a,
+      .HiddenFields-responsive > .HiddenFields-block-b,
+      .HiddenFields-responsive > .HiddenFields-block-c,
+      .HiddenFields-responsive > .HiddenFields-block-d,
+      .HiddenFields-responsive > .HiddenFields-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   .SubmitButtonHolder-grid-a, .SubmitButtonHolder-grid-b, .SubmitButtonHolder-grid-c, .SubmitButtonHolder-grid-d, .SubmitButtonHolder-grid-solo
+   {
+      overflow: hidden;
+   }
+   .SubmitButtonHolder-block-a, .SubmitButtonHolder-block-b, .SubmitButtonHolder-block-c, .SubmitButtonHolder-block-d, .SubmitButtonHolder-block-e
+   {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: left;
+      min-height: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .SubmitButtonHolder-block-a
+   {
+      clear: left;
+   }
+   ul.SubmitButtonHolder-grid-a, ul.SubmitButtonHolder-grid-b, ul.SubmitButtonHolder-grid-c, ul.SubmitButtonHolder-grid-d, ul.SubmitButtonHolder-grid-solo, li.SubmitButtonHolder-block-a, li.SubmitButtonHolder-block-b, li.SubmitButtonHolder-block-c, li.SubmitButtonHolder-block-d, li.SubmitButtonHolder-block-e
+   {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      list-style: none;
+   }
+   .SubmitButtonHolder-grid-a > .SubmitButtonHolder-block-a, .SubmitButtonHolder-grid-a > .SubmitButtonHolder-block-b
+   {
+      width: 50%;
+   }
+   .SubmitButtonHolder-grid-b > .SubmitButtonHolder-block-a, .SubmitButtonHolder-grid-b > .SubmitButtonHolder-block-b, .SubmitButtonHolder-grid-b > .SubmitButtonHolder-block-c
+   {
+      width: 33.333%;
+   }
+   .SubmitButtonHolder-grid-c > .SubmitButtonHolder-block-a, .SubmitButtonHolder-grid-c > .SubmitButtonHolder-block-b, .SubmitButtonHolder-grid-c > .SubmitButtonHolder-block-c, .SubmitButtonHolder-grid-c > .SubmitButtonHolder-block-d
+   {
+      width: 25%;
+   }
+   .SubmitButtonHolder-grid-d > .SubmitButtonHolder-block-a, .SubmitButtonHolder-grid-d > .SubmitButtonHolder-block-b, .SubmitButtonHolder-grid-d > .SubmitButtonHolder-block-c, .SubmitButtonHolder-grid-d > .SubmitButtonHolder-block-d, .SubmitButtonHolder-grid-d > .SubmitButtonHolder-block-e
+   {
+      width: 20%;
+   }
+   .SubmitButtonHolder-grid-solo > .SubmitButtonHolder-block-a
+   {
+      width: 100%;
+      float: none;
+   }
+   .SubmitButtonHolder-block-a
+   {
+      text-align: left;
+   }
+   .SubmitButtonHolder-block-b
+   {
+      text-align: left;
+   }
+   @media (max-width: 500px)
+   {
+      .SubmitButtonHolder-responsive > .SubmitButtonHolder-block-a,
+      .SubmitButtonHolder-responsive > .SubmitButtonHolder-block-b,
+      .SubmitButtonHolder-responsive > .SubmitButtonHolder-block-c,
+      .SubmitButtonHolder-responsive > .SubmitButtonHolder-block-d,
+      .SubmitButtonHolder-responsive > .SubmitButtonHolder-block-e
+      {
+         width: 100%;
+         float: none;
+      }
+   }
+   </style>
+
+   </body>
+</html>

@@ -1,0 +1,380 @@
+select{
+      background-color: initial;
+}
+
+.formoid-solid-purple input[type=button]:focus,
+.formoid-solid-purple input[type=button]:active,
+.formoid-solid-purple input[type=button]:hover,
+.formoid-solid-purple input[type=button][disabled] {
+  border-color: #2992BD;
+}
+/* background-color: #2992BD;
+border-top: 1px solid #479bbd;
+border-bottom: 5px solid #195973; */
+.formoid-solid-purple div.title {
+    background-color: #2992BD;
+    border-top: 1px solid #479bbd;
+    border-bottom: 5px solid #195973;
+}
+.formoid-solid-purple input[type=submit]{
+  background-color: #2992BD;
+}
+
+.formoid-solid-purple input[type=submit]:hover{
+  background-color: #479bbd;
+}
+.formoid-solid-purple input[type=submit]:active{
+  background-color: #195973;
+}
+
+
+/* checkbox & radio*/
+.formoid-solid-purple input[type=checkbox]+span:before{
+  border-color: #bdc3c7;
+}
+.formoid-solid-purple input[type=checkbox]:hover+span:before{
+  border-color: #479bbd;
+}
+.formoid-solid-purple input[type=checkbox]:checked+span:before{
+  color: #2992BD;
+  border-color: #2992BD;
+}
+
+/* radio */
+.formoid-solid-purple input[type=radio]+span:before{
+  color: #bdc3c7;
+}
+.formoid-solid-purple input[type=radio]:hover+span:before{
+  color: #479bbd;
+}
+.formoid-solid-purple input[type=radio]:checked+span:before{
+  color: #2992BD;
+}
+
+/* rating */
+.formoid-solid-purple .rating-star:after,
+.formoid-solid-purple .rating:hover .rating-star:after {
+  color: #bdc3c7;
+}
+.formoid-solid-purple .rating:hover .rating-star:hover:after,
+.formoid-solid-purple .rating:hover .rating-star:hover ~ .rating-star:after {
+  color: #479bbd;
+}
+.formoid-solid-purple .rating-input:checked ~ .rating-star:after {
+  color: #2992BD;
+}
+.formoid-solid-purple input[type=text]:hover,
+.formoid-solid-purple input[type=tel]:hover,
+.formoid-solid-purple input[type=password]:hover,
+.formoid-solid-purple input[type=email]:hover,
+.formoid-solid-purple input[type=url]:hover,
+.formoid-solid-purple input[type=date]:hover,
+.formoid-solid-purple input[type=number]:hover,
+.formoid-solid-purple input[type=file]:hover,
+.formoid-solid-purple textarea:hover,
+.formoid-solid-purple select:hover {
+  border-color: #479bbd;
+}
+.formoid-solid-purple input[type=text]:focus,
+.formoid-solid-purple input[type=tel]:focus,
+.formoid-solid-purple input[type=password]:focus,
+.formoid-solid-purple input[type=email]:focus,
+.formoid-solid-purple input[type=url]:focus,
+.formoid-solid-purple input[type=date]:focus,
+.formoid-solid-purple input[type=number]:focus,
+.formoid-solid-purple input[type=file]:focus,
+.formoid-solid-purple textarea:focus,
+.formoid-solid-purple select:focus{
+  border-color: #2992BD;
+}
+
+
+
+/* element icons */
+.formoid-solid-purple input:focus ~ .icon-place:before,
+.formoid-solid-purple textarea:focus ~ .icon-place:before,
+.formoid-solid-purple select:focus ~ .icon-place:before,
+.formoid-solid-purple .select.open ~ .icon-place:before,
+.formoid-solid-purple input[type=file]:focus ~ .icon-place:before,
+.formoid-solid-purple .button:focus ~ .icon-place:before,
+.formoid-solid-purple .file_text:focus ~ .icon-place:before {
+  color: #2992BD;
+}
+
+
+
+/* bootstrap select */
+.formoid-solid-purple .dropdown-menu li.active > a,
+.formoid-solid-purple .dropdown-menu li.selected > a,
+.formoid-solid-purple .dropdown-menu li.active > a.highlighted,
+.formoid-solid-purple .dropdown-menu li.selected > a.highlighted,
+.formoid-solid-purple .dropdown-inverse li.active > a,
+.formoid-solid-purple .dropdown-inverse li.selected > a {
+  background-color: #2992BD;
+}
+.formoid-solid-purple .btn.btn-primary:hover,
+.formoid-solid-purple .btn.btn-primary:focus,
+.formoid-solid-purple .btn-group:focus .btn.btn-primary.dropdown-toggle {
+  border-color: #479bbd;
+}
+.formoid-solid-purple .btn.btn-primary:active,
+.formoid-solid-purple .btn-group.open .btn.btn-primary.dropdown-toggle,
+.formoid-solid-purple .btn.btn-primary.active,
+.formoid-solid-purple .dropdown-menu li.active > a:hover,
+.formoid-solid-purple .dropdown-menu li.selected > a:hover,
+.formoid-solid-purple .dropdown-menu li.active > a.highlighted:hover,
+.formoid-solid-purple .dropdown-menu li.selected > a.highlighted:hover,
+.formoid-solid-purple .dropdown-menu li.active > a:focus,
+.formoid-solid-purple .dropdown-menu li.selected > a:focus,
+.formoid-solid-purple .dropdown-menu li.active > a.highlighted:focus,
+.formoid-solid-purple .dropdown-menu li.selected > a.highlighted:focus {
+  border-color: #2992BD;
+}
+.formoid-solid-purple .dropdown-arrow {
+  border-bottom: 8px solid #2992BD;
+}
+.formoid-solid-purple .dropdown-menu {
+  border: 2px solid #2992BD;
+}
+
+
+
+
+/* datepicker */
+.datepicker {
+  border: 2px solid #2992BD;
+}
+.datepicker:before {
+  border-bottom: 7px solid #2992BD;
+}
+.datepicker td.active,
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled],
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td span.active,
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled]{
+  color: #ffffff;
+  background-image: none;
+  background-color: #2992BD;
+}
+
+.formoid-solid-purple input[type=button]:focus,
+.formoid-solid-purple input[type=button]:active,
+.formoid-solid-purple input[type=button]:hover,
+.formoid-solid-purple input[type=button][disabled] {
+  border-color: #2992BD;
+}
+.formoid-solid-purple div.title{
+  background-color: #2992BD;
+  border-top: 1px solid #479bbd;
+  border-bottom: 5px solid #195973;
+  background-color: #2992BD;
+}
+.formoid-solid-purple input[type=submit]{
+  background-color: #2992BD;
+}
+
+.formoid-solid-purple input[type=submit]:hover{
+  background-color: #479bbd;
+}
+.formoid-solid-purple input[type=submit]:active{
+  background-color: #195973;
+}
+
+/* File input */
+.formoid-solid-purple .element-file .button {
+  background-color: #2992BD;
+}
+.formoid-solid-purple .element-file .file_text{
+  border-color: #bdc3c7;
+}
+.formoid-solid-purple .element-file label:hover .file_text{
+  border-color: #479bbd;
+}
+.formoid-solid-purple .element-file .button:hover {
+  background-color: #479bbd;
+}
+.formoid-solid-purple .element-file .button:active {
+  background-color: #195973;
+}
+.formoid-solid-purple .element-file label:active .file_text{
+  border-color: #2992BD;
+}
+
+
+/* element-submit + element-text */
+.formoid-solid-purple > .submit,
+.formoid-solid-purple > .title{
+  background-color: #bcc3ca;
+}
+.formoid-solid-purple > .submit{
+  background-color: #edeff1;
+  border-top: 2px solid #d6dbdf;
+}
+
+/* checkbox & radio*/
+.formoid-solid-purple input[type=checkbox]+span:before{
+  border-color: #bdc3c7;
+}
+.formoid-solid-purple input[type=checkbox]:hover+span:before{
+  border-color: #479bbd;
+}
+.formoid-solid-purple input[type=checkbox]:checked+span:before{
+  color: #2992BD;
+  border-color: #2992BD;
+}
+
+/* radio */
+.formoid-solid-purple input[type=radio]+span:before{
+  color: #bdc3c7;
+}
+.formoid-solid-purple input[type=radio]:hover+span:before{
+  color: #479bbd;
+}
+.formoid-solid-purple input[type=radio]:checked+span:before{
+  color: #2992BD;
+}
+
+/* rating */
+.formoid-solid-purple .rating-star:after,
+.formoid-solid-purple .rating:hover .rating-star:after {
+  color: #bdc3c7;
+}
+.formoid-solid-purple .rating:hover .rating-star:hover:after,
+.formoid-solid-purple .rating:hover .rating-star:hover ~ .rating-star:after {
+  color: #479bbd;
+}
+.formoid-solid-purple .rating-input:checked ~ .rating-star:after {
+  color: #2992BD;
+}
+
+.formoid-solid-purple input[type=text]:hover,
+.formoid-solid-purple input[type=tel]:hover,
+.formoid-solid-purple input[type=password]:hover,
+.formoid-solid-purple input[type=email]:hover,
+.formoid-solid-purple input[type=url]:hover,
+.formoid-solid-purple input[type=date]:hover,
+.formoid-solid-purple input[type=number]:hover,
+.formoid-solid-purple input[type=file]:hover,
+.formoid-solid-purple textarea:hover,
+.formoid-solid-purple select:hover {
+  border-color: #479bbd;
+}
+.formoid-solid-purple input[type=text]:focus,
+.formoid-solid-purple input[type=tel]:focus,
+.formoid-solid-purple input[type=password]:focus,
+.formoid-solid-purple input[type=email]:focus,
+.formoid-solid-purple input[type=url]:focus,
+.formoid-solid-purple input[type=date]:focus,
+.formoid-solid-purple input[type=number]:focus,
+.formoid-solid-purple input[type=file]:focus,
+.formoid-solid-purple textarea:focus,
+.formoid-solid-purple select:focus{
+  border-color: #2992BD;
+}
+
+
+
+/* element icons */
+.formoid-solid-purple input:focus ~ .icon-place:before,
+.formoid-solid-purple textarea:focus ~ .icon-place:before,
+.formoid-solid-purple select:focus ~ .icon-place:before,
+.formoid-solid-purple .select.open ~ .icon-place:before,
+.formoid-solid-purple input[type=file]:focus ~ .icon-place:before,
+.formoid-solid-purple .button:focus ~ .icon-place:before,
+.formoid-solid-purple .file_text:focus ~ .icon-place:before {
+  color: #2992BD;
+}
+
+
+
+/* bootstrap select */
+.formoid-solid-purple .dropdown-menu li.active > a,
+.formoid-solid-purple .dropdown-menu li.selected > a,
+.formoid-solid-purple .dropdown-menu li.active > a.highlighted,
+.formoid-solid-purple .dropdown-menu li.selected > a.highlighted,
+.formoid-solid-purple .dropdown-inverse li.active > a,
+.formoid-solid-purple .dropdown-inverse li.selected > a {
+  background-color: #2992BD;
+}
+.formoid-solid-purple .btn.btn-primary:hover,
+.formoid-solid-purple .btn.btn-primary:focus,
+.formoid-solid-purple .btn-group:focus .btn.btn-primary.dropdown-toggle {
+  border-color: #479bbd;
+}
+.formoid-solid-purple .btn.btn-primary:active,
+.formoid-solid-purple .btn-group.open .btn.btn-primary.dropdown-toggle,
+.formoid-solid-purple .btn.btn-primary.active,
+.formoid-solid-purple .dropdown-menu li.active > a:hover,
+.formoid-solid-purple .dropdown-menu li.selected > a:hover,
+.formoid-solid-purple .dropdown-menu li.active > a.highlighted:hover,
+.formoid-solid-purple .dropdown-menu li.selected > a.highlighted:hover,
+.formoid-solid-purple .dropdown-menu li.active > a:focus,
+.formoid-solid-purple .dropdown-menu li.selected > a:focus,
+.formoid-solid-purple .dropdown-menu li.active > a.highlighted:focus,
+.formoid-solid-purple .dropdown-menu li.selected > a.highlighted:focus {
+  border-color: #2992BD;
+}
+.formoid-solid-purple .dropdown-arrow {
+  border-bottom: 8px solid #2992BD;
+}
+.formoid-solid-purple .dropdown-menu {
+  border: 2px solid #2992BD;
+}
+
+
+
+
+/* datepicker */
+.datepicker {
+  border: 2px solid #2992BD;
+}
+.datepicker:before {
+  border-bottom: 7px solid #2992BD;
+}
+.datepicker td.active,
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled],
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td span.active,
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled]{
+  color: #ffffff;
+  background-image: none;
+  background-color: #2992BD;
+}
