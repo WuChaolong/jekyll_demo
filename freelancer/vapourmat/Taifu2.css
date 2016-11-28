@@ -1,0 +1,9 @@
+#fitems .nbs-flexisel-ul{
+    width: inherit;
+}
+#fitems .nbs-flexisel-item{
+    width:100%!important;
+}
+#fitems .fitems{
+    height: initial;
+}
