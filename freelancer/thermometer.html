@@ -1,0 +1,30 @@
+Units:<input type="number" oninput="writeData(this.value)"><br/>
+<img src="http://www.coolfundraisingideas.net/thermometer/thermometer.php?currency=Units&goal=100&color=red&size=large">
+
+<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBAr14WIbj0Bva5xlfLi7y2XObIrxrqCJA",
+    authDomain: "friendlychat-56b32.firebaseapp.com",
+    databaseURL: "https://friendlychat-56b32.firebaseio.com",
+    projectId: "friendlychat-56b32",
+    storageBucket: "friendlychat-56b32.appspot.com",
+    messagingSenderId: "526679999594"
+  };
+  firebase.initializeApp(config);
+var database = firebase.database();
+var thermometer = firebase.database().ref('thermometer');
+
+thermometer.on('value', function(snapshot) {
+  update(snapshot.val());
+});
+function writeData(number) {
+  thermometer.set(number);
+}
+function update(value){
+    var src = "http://www.coolfundraisingideas.net/thermometer/thermometer.php?currency=Units&goal=100&color=red&size=large&current="+value;
+    document.querySelector("input").value = value;
+    document.querySelector("img").src = src;
+}
+</script>
