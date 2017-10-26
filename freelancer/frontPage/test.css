@@ -1,0 +1,415 @@
+#usHelpUl{
+    /* display: inline-block; */
+}
+#usHelpUl li{
+    display: inline-block;
+    margin: .5em;
+    vertical-align: middle;
+    /* max-width: 5em; */
+    text-shadow: 1px 0;
+}
+#usHelpUl img{
+    width: 100%;
+    max-width: 5em;
+}
+#usHelpUl .active{
+    border-bottom: 2px solid;
+    /*     display: inline-block; */
+}
+/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		overflow: hidden;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover; /*cover video background */
+		z-index:3;
+	}
+
+iframe.google-map{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		z-index:3;
+
+	}
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	.layer{
+		position: absolute;
+		z-index: 40;
+		width: 100%;
+		left: 0;
+		/* top: -100%; */
+
+		/* 
+		* Preventing flicker on some browsers 
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		/* bottom: -100%; */
+		bottom: 6em;
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		/* top: 1em; */
+		/* bottom: auto; */
+	}
+	#section2 .layer{
+	height: 100%;
+	/* overflow: hidden; */
+	bottom: 0;
+	}
+	#section1 .layer{
+		top: 1em;
+		bottom: auto;
+	}
+	.box h2{
+		/* color: black; */
+	}
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section2 h1{
+		color: #006999;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+	/* Hiding video controls 
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+
+
+	.section{
+		background-size: cover;
+		background-position: center;
+	}
+	.slide{
+		background-size: cover;
+		/* background-repeat: no-repeat; */
+		background-position: center;
+	}
+	#section0{
+		padding: 6% 0 0 0;
+		/* 		color:#fff; */
+		overflow: auto;
+	}
+	#section0 slide{
+		padding: 6% 0 0 0;
+		overflow: auto;
+	}
+	#section3{
+		/* padding: 6% 0 0 0; */
+		color:#fff;
+	}
+
+p{
+    text-align:left;
+    padding-left:.5em;
+}
+from{
+	/* width: 751px; */
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+}
+input,textarea{
+	bottom:2px;
+	margin: .5em 2%;
+	padding: 0 .5em;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	border: 2px solid #555;
+	box-sizing: border-box;
+	display: inline-block;
+
+	width: 84%;
+	color:#006999;
+}
+
+textarea{
+/* 	width: 84%; */
+	height:5em;
+}
+input{
+/* 	width: 40%; */
+/* 	margin: .5em 2%; */
+}
+button[type='submit']{
+	background: #006999;
+	color: #fff;
+	border: 0;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	padding: 0 .5em;
+}
+#section4 h1,#section4 h2{
+	text-shadow: 0 0.05em 0 rgba(0,0,0,0.25);
+}
+
+	#section4 .layer{
+		bottom: 1em;
+	}
+
+
+
+
+
+.up-link-wrapper,
+.down-link-wrapper {
+  position: absolute;
+  z-index: 41;
+  width: 100%;
+  text-align: center;
+}
+.up-link-wrapper {
+  top: 1.25em;
+}
+.down-link-wrapper {
+  bottom: 0;
+}
+a.up-link,
+a.down-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.25em 1em;
+  /*margin: 0 auto 4em;*/
+  color: #ccc;
+  /* color: rgba(0, 105, 153, 0.78); */
+  border: 0.075em dashed #ccc;
+  /* border: 0.075em dashed rgba(0, 105, 153, 0.78); */
+  /*border: 0.075em solid #E9D3AA;*/
+  border-radius: 0.125em;
+  box-shadow: 0 0 0 0.5em rgba(0,105,153,0.6);
+  background: rgba(0,105,153,0.6);
+  box-shadow: 0 0 0 0.25em rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.25);
+}
+a.up-link {
+  margin: 4em auto 0;
+}
+a.down-link {
+  margin: 0 auto 4em;
+}
+
+a.up-link.trigger,
+a.down-link.trigger {
+  padding: 0;
+  height: 0;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+a.up-link span,
+a.down-link span {
+  display: inline-block;
+  position: relative;
+  font-size: 0.85em;
+  padding: 0.25em;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+a.up-link span {
+  top: -2em;
+}
+a.down-link span {
+  top: 0;
+}
+.animating a.up-link span,
+.animating a.down-link span {
+  opacity: 0;
+}
+.static a.up-link span,
+.static a.down-link span {
+  opacity: 1;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.up-link:before,
+.up-link:after,
+.down-link:before,
+.down-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  /*bottom: -3.25em;*/
+  left: 50%;
+  width: 3em;
+  height: 2em;
+  opacity: 0.5;
+  -webkit-transform: translate3d(-50%,0,0);
+          transform: translate3d(-50%,0,0);
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+.up-link:before {
+  top: -3.25em;
+  background: url(http://threenorthagency.com/img/up-arrow-top.svg) no-repeat center top;
+}
+.up-link:after {
+  top: -3.25em;
+  background: url(http://threenorthagency.com/img/up-arrow-top.svg) no-repeat center bottom;
+  -webkit-transform: translate3d(-50%,0,0);
+          transform: translate3d(-50%,0,0);
+}
+.down-link:before {
+  bottom: -3.25em;
+  background: url(http://threenorthagency.com/img/down-arrow-top.svg) no-repeat center top;
+}
+.down-link:after {
+  bottom: -3.25em;
+  background: url(http://threenorthagency.com/img/down-arrow-top.svg) no-repeat center bottom;
+  -webkit-transform: translate3d(-50%,0,0);
+          transform: translate3d(-50%,0,0);
+}
+
+a.up-link.trigger:after,
+a.down-link.trigger:before {
+  display: none;
+}
+
+a.up-link:hover,
+a.down-link:hover {
+  color: #fff;
+  /* color: #006999; */
+  border-color: #fff;
+  /* border-color: #006999; */
+  /*box-shadow: 0 0.125em 0 #588A87;*/
+}
+
+.up-link:hover:after {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+}
+.up-link:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%,-25%,0);
+          transform: translate3d(-50%,-25%,0);
+}
+
+.down-link:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%,50%,0);
+          transform: translate3d(-50%,50%,0);
+}
+.down-link:hover:after {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%,25%,0);
+          transform: translate3d(-50%,25%,0);
+}
+.book{
+	width: 260px;
+	height: 368px;
+	display: inline-block;
+	background: url(BcgERGgzi.svg) no-repeat center;
+	background-size: 130%;
+	padding: 2.5em 2em 0 .5em;
+	box-sizing: border-box;
+	font-weight: bold;
+	position: absolute;
+	left: 2em;
+	bottom: 4em;
+	z-index: 6;
+	-ms-transition: -ms-transform .5s;
+	-webkit-transition: -webkit-transform .5s;
+	transition: transform .5s;
+	font-size: 2em;
+}
+.coffee{
+	width:60px;
+	height: 60px;
+	display: inline-block;
+	background: url(1057fb0f5f1c829.png) no-repeat center;
+	background-size: 130%;
+}
+
+
+.moveDown{-webkit-transform: translate3d(0, 8em, 0);-ms-transform: translate3d(0, 8em, 0);transform: translate3d(0, 8em, 0);/* transition: transform .2s; */}
+.moveUp{
+
+-webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+}
+
+
+.box h2{
+	padding: .2em;
+	border-bottom: 2px;
+	border-bottom-style: dotted;
+	margin-bottom: .2em;
+}
+.box.fit{
+	padding-top:.4em;
+}
+
+@media screen and (min-width:751px){
+	from{
+		    width: 700px;
+	}
+	textarea{
+		width: 84%;
+		height:5em;
+	}
+	input{
+		width: 40%; 
+		margin: .5em 2%;
+	}
+	#section4 .layer{
+		bottom: 2em;
+	}
+
+}
+
+@media screen and (min-width:1000px){
+	.box{
+		display: inline-block;
+		padding: 1.2em 1em;
+		vertical-align:middle;
+		border-radius: 0.1em;
+		box-shadow: 0 0 0 0.25em rgba(0,105,153, 0.69);
+		background: rgba(225,225,225,5);
+		margin: 1em;
+		height: 7em;
+		box-sizing: border-box;
+		width:28em;
+	}
+
+}
+
