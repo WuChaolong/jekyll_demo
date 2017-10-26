@@ -56,7 +56,7 @@ Browser Upgrade Prompt
 }
 
 .gutters {
-  margin: 0 -1em 1em;
+  margin: 0 -1em 0;
   /*padding: 0 1em !important;*/
 }
 
@@ -274,17 +274,14 @@ Browser Upgrade Prompt
 
 }
 
-/* a,
-a:visited {
+
+#work a,
+
+#work a:visited {
   color: #D2442D;
   -webkit-transition: all ease 300ms;
           transition: all ease 300ms;
 }
-
-a:active,
-a:hover,.active > a {
-  color: #267773
-} */
 
 .main-content a {
   text-decoration: none;
@@ -1008,8 +1005,8 @@ a.down-link {
   border: 0.075em dashed #ccc;
   /*border: 0.075em solid #E9D3AA;*/
   border-radius: 0.125em;
-  box-shadow: 0 0 0 0.25em rgba(0,0,0,0.25);
-  background: rgba(0,0,0,0.25);
+  box-shadow: 0 0 0 0.25em rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
 }
 a.up-link {
   margin: 4em auto 0;
@@ -1216,7 +1213,7 @@ a.down-link:hover {
 
   .intro-viewport .page-intro {
     /*position: static;*/
-    padding-top: 2em;
+    /* padding-top: 2em; */
   }
 
   .inner-viewport .page-intro {

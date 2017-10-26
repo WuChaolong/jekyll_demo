@@ -89,6 +89,7 @@ iframe.google-map{
 	/*solves problem with overflowing video in Mac with Chrome */
 	#section2 h1{
 		color: #006999;
+		margin-bottom: .5em;
 	}
 
 
