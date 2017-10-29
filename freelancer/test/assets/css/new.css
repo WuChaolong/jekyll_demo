@@ -1,0 +1,19 @@
+/*#pie-landing {*/
+/*margin-left : 4%;*/
+/*}
+ */
+
+
+@media only screen and (min-width : 1200px) {
+    #latest-trades {
+        padding-right: 5%;
+    }
+}
+
+.page-subtitle {
+    padding-left: 4%;
+}
+
+.rose {
+color : #d81b60;
+}
