@@ -7,11 +7,20 @@ function init(){
       console.log(this);
 //       this.parentNode.classList.remove("collapse-hidden");
       this.parentNode.classList.add("collapse-shown");
+      var collapseBackdrop = $('#collapseBackdrop')[0];
+      collapseBackdrop.classList.add("show");
+//       collapseBackdrop.onclick = function(){
+//           $("#collapseMenu").collapse({"toggle": false, 'parent': '#navaccordion'});
+//           $("#navbarSupportedContent").collapse({"toggle": false, 'parent': '#navaccordion' });
+//       }
+
     })
     $('#navbarSupportedContent').on('hide.bs.collapse', function () {
       console.log(this);
       this.parentNode.classList.remove("collapse-shown");
 //       this.parentNode.classList.add("collapse-hidden");
+      var collapseBackdrop = $('#collapseBackdrop')[0];
+      collapseBackdrop.classList.remove("show");
     })
 }
 function onSettings(postion){

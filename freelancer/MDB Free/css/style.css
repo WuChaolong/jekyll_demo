@@ -199,3 +199,26 @@
     right: 0;
   }
 }
+
+.collapse-backdrop.fade {
+    opacity: 0;
+    display:none;
+}
+.collapse-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #000;
+}
+.collapse-backdrop.show {
+    display:block;
+    opacity: .5;
+}
+.collapse-shown .navbar-toggler-icon{background-image: initial;}
+.collapse-shown .navbar-toggler-icon:before{
+  content: "✕";
+  font-size: 1.5em;
+}
