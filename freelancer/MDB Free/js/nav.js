@@ -3,6 +3,16 @@ function init(){
     var postion = readCookie("nav-postion")||"top";
     setNav(postion);
     onSettings(postion);
+    $('#navbarSupportedContent').on('show.bs.collapse', function () {
+      console.log(this);
+//       this.parentNode.classList.remove("collapse-hidden");
+      this.parentNode.classList.add("collapse-shown");
+    })
+    $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+      console.log(this);
+      this.parentNode.classList.remove("collapse-shown");
+//       this.parentNode.classList.add("collapse-hidden");
+    })
 }
 function onSettings(postion){
     var radios = document.getElementsByName("positionRadios");
@@ -13,7 +23,9 @@ function onSettings(postion){
             (prev)? console.log(prev.value):null;
             if(this !== prev) {
                 prev = this;
+
                 setNav(this.value);
+                animation();
             }
             console.log(this.value)
         };
@@ -22,7 +34,12 @@ function onSettings(postion){
         }
     }
 }
+function animation(){
+    document.body.classList.add("nav-fill");
+    setTimeout('document.body.classList.remove("nav-fill");',500);
+}
 function setNav(postion){
+
      document.body.classList=[];
      document.body.classList.add("nav-"+postion);
      createCookie("nav-postion",postion);
