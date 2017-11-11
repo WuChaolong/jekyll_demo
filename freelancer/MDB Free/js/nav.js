@@ -26,6 +26,9 @@ function onSettings(postion){
 
                 setNav(this.value);
                 animation();
+                
+                $("#collapseMenu").collapse({"toggle": true, 'parent': '#navaccordion'});
+                $("#navbarSupportedContent").collapse({"toggle": true, 'parent': '#navaccordion' });
             }
             console.log(this.value)
         };
