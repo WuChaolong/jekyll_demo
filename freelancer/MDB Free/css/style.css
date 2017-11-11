@@ -18,6 +18,9 @@
     /* padding: 0 !important; */
     text-align: center;
     /* transition: height 1s; */
+
+    animation-duration: .5s;
+    animation-name: left-in;
 }
 .nav-left .navbar-brand,.nav-right .navbar-brand{
     margin-right: 0;
@@ -60,6 +63,9 @@
     top:0;
     /* padding: 0 !important; */
     text-align: center;
+
+    animation-duration: .5s;
+    animation-name: right-in;
 }
 .nav-top{
     /* padding-top: 8em; */
@@ -71,6 +77,9 @@
     top: 0;
     left: 0;
     /* right: 0; */
+    
+    animation-duration: .5s;
+    animation-name: top-in;
 }
 .nav-left .navbar-collapse {
     -ms-flex-preferred-size: 100%;
@@ -143,7 +152,7 @@
 
 @media (min-width: 600px){
   .navbar.scrolling-navbar {
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -webkit-transition: left .5s ease-in-out,right .5s ease-in-out,top .5s ease-in-out,bottom .5s ease-in-out,background .5s ease-in-out,padding .5s ease-in-out;
       transition: left .5s ease-in-out,right .5s ease-in-out,top .5s ease-in-out,bottom .5s ease-in-out,background .5s ease-in-out,padding .5s ease-in-out;
       padding-top: 12px;
       padding-bottom: 12px;
@@ -154,4 +163,33 @@
     right: -100%;
     bottom: -100%;
     top: -100%;
+}
+
+
+@keyframes left-in {
+  from {
+    left:-100%; 
+  }
+
+  to {
+    left: 0;
+  }
+}
+@keyframes top-in {
+  from {
+    top:-100%; 
+  }
+
+  to {
+    top: 0;
+  }
+}
+@keyframes right-in {
+  from {
+    right:-100%; 
+  }
+
+  to {
+    right: 0;
+  }
 }

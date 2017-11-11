@@ -25,7 +25,7 @@ function onSettings(postion){
                 prev = this;
 
                 setNav(this.value);
-                animation();
+//                 animation();
                 
                 $("#collapseMenu").collapse({"toggle": true, 'parent': '#navaccordion'});
                 $("#navbarSupportedContent").collapse({"toggle": true, 'parent': '#navaccordion' });
