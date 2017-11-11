@@ -3,22 +3,6 @@ function init(){
     var postion = readCookie("nav-postion")||"top";
     setNav(postion);
     onSettings(postion);
-    $('#navbarSupportedContent').on('show.bs.collapse', function () {
-      console.log(this);
-//       this.parentNode.classList.remove("collapse-hidden");
-      this.parentNode.classList.add("collapse-shown");
-      var collapseBackdrop = $('#collapseBackdrop')[0];
-      collapseBackdrop.classList.add("show");
-
-
-    })
-    $('#navbarSupportedContent').on('hide.bs.collapse', function () {
-      console.log(this);
-      this.parentNode.classList.remove("collapse-shown");
-//       this.parentNode.classList.add("collapse-hidden");
-      var collapseBackdrop = $('#collapseBackdrop')[0];
-      collapseBackdrop.classList.remove("show");
-    })
 }
 function onSettings(postion){
     var radios = document.getElementsByName("positionRadios");
@@ -29,12 +13,7 @@ function onSettings(postion){
             (prev)? console.log(prev.value):null;
             if(this !== prev) {
                 prev = this;
-
                 setNav(this.value);
-//                 animation();
-                
-                $("#collapseMenu").collapse({"toggle": true, 'parent': '#navaccordion'});
-                $("#navbarSupportedContent").collapse({"toggle": true, 'parent': '#navaccordion' });
             }
             console.log(this.value)
         };
@@ -43,15 +22,27 @@ function onSettings(postion){
         }
     }
 }
-function animation(){
-    document.body.classList.add("nav-fill");
-    setTimeout('document.body.classList.remove("nav-fill");',500);
-}
 function setNav(postion){
-
      document.body.classList=[];
      document.body.classList.add("nav-"+postion);
      createCookie("nav-postion",postion);
+	 if(postion !=  "top"){
+		 $("nav").addClass("pad20");
+		 $("body").removeClass("padtop70");
+		 //$("#icon-cont>ul").addClass("marginbt50");
+		 if($("#icon-cont>ul>li").hasClass("shiftleft")){
+			$("#icon-cont>ul>li").removeClass("shiftleft");
+			$("#icon-cont>ul").removeClass("dishoriz");
+		}
+		(!document.getElementById("icon-cont").classList.contains('centeralign'))?document.getElementById("icon-cont").className += " centeralign":null;
+	 }else{
+		document.getElementById("icon-cont").classList.remove("centeralign");
+		$("#icon-cont>ul>li").addClass("shiftleft");
+		$("#icon-cont>ul").addClass("dishoriz");
+		//$("#icon-cont>ul").removeClass("marginbt50");
+		$("nav").removeClass("pad20");
+		$("body").addClass("padtop70");
+	 }
 }
 
 function createCookie(name,value,days) {

@@ -7,8 +7,8 @@ function init(){
       console.log(this);
 //       this.parentNode.classList.remove("collapse-hidden");
       this.parentNode.classList.add("collapse-shown");
-      var collapseBackdrop = $('#collapseBackdrop')[0];
-      collapseBackdrop.classList.add("show");
+//       var collapseBackdrop = $('#collapseBackdrop')[0];
+//       collapseBackdrop.classList.add("show");
 
 
     })
@@ -16,8 +16,8 @@ function init(){
       console.log(this);
       this.parentNode.classList.remove("collapse-shown");
 //       this.parentNode.classList.add("collapse-hidden");
-      var collapseBackdrop = $('#collapseBackdrop')[0];
-      collapseBackdrop.classList.remove("show");
+//       var collapseBackdrop = $('#collapseBackdrop')[0];
+//       collapseBackdrop.classList.remove("show");
     })
 }
 function onSettings(postion){
