@@ -19,8 +19,8 @@
     /* transition: height 1s; */
     animation-duration: .5s;
     animation-name: left-in;
-    min-width: 3.75rem;
-    min-height: 3.5rem;
+    min-width: 4.75rem;
+    min-height: 4.5rem;
 }
 .nav-left .navbar-brand,.nav-right .navbar-brand{
     margin-right: 0;
@@ -42,7 +42,7 @@
 .nav-left .navbar-toggler,.nav-right .navbar-toggler{
   /* display:none; */
   position: absolute;
-  bottom: .5rem;
+  bottom: 1rem;
   left: 0;
   right: 0;
 }
@@ -70,8 +70,8 @@
     text-align: center;
     animation-duration: .5s;
     animation-name: right-in;
-    min-width: 3.75rem;
-    min-height: 3.5rem;
+    min-width: 4.75rem;
+    min-height: 4.5rem;
 }
 .nav-top{
     /* padding-top: 8em; */
