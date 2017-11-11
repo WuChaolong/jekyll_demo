@@ -217,7 +217,7 @@
     display:block;
     opacity: .5;
 }
-.collapse-shown .navbar-toggler-icon{background-image: initial;}
+.navbar.collapse-shown .navbar-toggler-icon{background-image: initial;}
 .collapse-shown .navbar-toggler-icon:before{
   content: "✕";
   font-size: 1.5em;
