@@ -1,20 +1,24 @@
 /* Your custom styles */
+body{
+  -webkit-transition: padding .5s ease-in-out;
+    transition: padding .5s ease-in-out;
+}
 .navbar{
   visibility: hidden;
 }
 .nav-left{
-    /* padding-left: 6em; */
+    padding-left: 6em;
 }
 .nav-left .navbar{
     visibility: visible;
-    /* width: 6em; */
+    width: 6em;
     /* height: 10%; */
     position: fixed;
     /* right: -100%; */
     left: 0;
     /* right: 100%; */
     bottom: 0;
-    /* padding: 0 !important; */
+    padding: 0 !important;
     text-align: center;
     /* transition: height 1s; */
     animation-duration: .5s;
@@ -56,17 +60,17 @@
   height:100%;
 }
 .nav-right{
-    /* padding-right: 6em; */
+    padding-right: 6em;
 }
 .nav-right .navbar{
     visibility: visible;
-    /* width: 6em; */
+    width: 6em;
     /* height: 100%; */
     position: fixed;
     right: 0;
     /* top:0; */
     bottom: 0;
-    /* padding: 0 !important; */
+    padding: 0 !important;
     text-align: center;
     animation-duration: .5s;
     animation-name: right-in;
@@ -221,4 +225,11 @@
 .collapse-shown .navbar-toggler-icon:before{
   content: "✕";
   font-size: 1.5em;
+}
+
+body[data-class='no-padding']{
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
 }

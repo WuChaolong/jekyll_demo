@@ -1,24 +1,34 @@
 init();
 function init(){
     var postion = readCookie("nav-postion")||"top";
-    setNav(postion);
-    onSettings(postion);
+
     $('#navbarSupportedContent').on('show.bs.collapse', function () {
       console.log(this);
 //       this.parentNode.classList.remove("collapse-hidden");
       this.parentNode.classList.add("collapse-shown");
-      var collapseBackdrop = $('#collapseBackdrop')[0];
-      collapseBackdrop.classList.add("show");
-
+//       var collapseBackdrop = $('#collapseBackdrop')[0];
+//       collapseBackdrop.classList.add("show");
+      document.body.setAttribute("data-class","");
+      createCookie("nav-collapse","show");
 
     })
     $('#navbarSupportedContent').on('hide.bs.collapse', function () {
       console.log(this);
       this.parentNode.classList.remove("collapse-shown");
+      
+      document.body.setAttribute("data-class","no-padding");
 //       this.parentNode.classList.add("collapse-hidden");
-      var collapseBackdrop = $('#collapseBackdrop')[0];
-      collapseBackdrop.classList.remove("show");
+//       var collapseBackdrop = $('#collapseBackdrop')[0];
+//       collapseBackdrop.classList.remove("show");
+      createCookie("nav-collapse","hide");
     })
+    var collapse = readCookie("nav-collapse")||"show";
+    if(collapse=="show"){
+        $("#collapseMenu").collapse({"toggle": true, 'parent': '#navaccordion'});
+        $("#navbarSupportedContent").collapse({"toggle": true, 'parent': '#navaccordion' });
+    }
+    setNav(postion);
+    onSettings(postion);
 }
 function onSettings(postion){
     var radios = document.getElementsByName("positionRadios");
@@ -29,12 +39,12 @@ function onSettings(postion){
             (prev)? console.log(prev.value):null;
             if(this !== prev) {
                 prev = this;
+                $("#collapseMenu").collapse({"toggle": true, 'parent': '#navaccordion'});
+                $("#navbarSupportedContent").collapse({"toggle": true, 'parent': '#navaccordion' });
 
                 setNav(this.value);
 //                 animation();
                 
-                $("#collapseMenu").collapse({"toggle": true, 'parent': '#navaccordion'});
-                $("#navbarSupportedContent").collapse({"toggle": true, 'parent': '#navaccordion' });
             }
             console.log(this.value)
         };
@@ -49,6 +59,8 @@ function animation(){
 }
 function setNav(postion){
 
+     
+     
      document.body.classList=[];
      document.body.classList.add("nav-"+postion);
      createCookie("nav-postion",postion);
