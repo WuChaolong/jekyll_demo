@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web dictaphone</title>
+    <link href="styles/app.css" rel="stylesheet" type="text/css">
+    <link href="styles/install-button.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+
+      <section class="main-controls">
+        <canvas class="visualizer" height="60px"></canvas>
+
+
+        <div id="buttons" class="player">
+            <audio controls="controls" id="audio"></audio>
+        </div>
+        <div id="buttons" class="recorder">
+          <span id="time">00:00:00</span>
+          <button class="record" title="record"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+          <button class="stop" disabled title="stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+          
+        </div>
+      </section>
+
+
+    </div>
+
+
+    <script src="scripts/install.js"></script>
+
+    <script src="scripts/mediaDevices-getUserMedia-polyfill.js"></script>
+
+    <!-- Below is your custom application script -->
+    <script src="scripts/app.js"></script>
+
+  </body>
+</html>
