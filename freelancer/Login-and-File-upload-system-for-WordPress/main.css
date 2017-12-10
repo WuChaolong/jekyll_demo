@@ -1,0 +1,17 @@
+.is-login #googleButton[data-onload], #googleButton,#user,#drive{
+    display:none;
+}
+ #googleButton[data-onload],.is-login #user,.is-login #drive{
+    display:inline-block;
+}
+ #googleButton{
+    margin-top: 5em;
+}
+body{
+    text-align: center;
+}
+#user{
+    height: 5em;
+    border-radius: 50%;
+}
+#drive{width: 100%;/* margin-top: .5em; */height: 100%;position: absolute;left: 0;top: 0;border: 0;}
